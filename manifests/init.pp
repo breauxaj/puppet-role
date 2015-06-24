@@ -2,6 +2,7 @@ class role (
   $label = 'undefined',
 ) {
   include role::drupal
+  include role::coldfusion
   
   file { '/etc/role':
     ensure  => present,
