@@ -1,6 +1,7 @@
 class role (
   $label = 'undefined',
 ) {
+  include role::base
   include role::drupal
   include role::coldfusion
   include role::sql
