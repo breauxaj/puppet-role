@@ -4,8 +4,6 @@ class role (
   include role::coldfusion
   include role::drupal
   include role::sql
-  
-  hiera_include('role::base', '')
 
   file { '/etc/role':
     ensure  => present,
