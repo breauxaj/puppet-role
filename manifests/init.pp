@@ -5,6 +5,8 @@ class role (
   include role::drupal
   include role::sql
 
+  hiera_include('role::base', '')
+
   file { '/etc/role':
     ensure  => present,
     owner   => 'root',
